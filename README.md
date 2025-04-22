@@ -70,7 +70,11 @@ python3 associate.py {PATH_TO_SEQUENCE}/rgb.txt {PATH_TO_SEQUENCE}/depth.txt {PA
 cd HybridDyn_VSLAM/Examples/RGB-D
 bash ./rgbd_tum_test.sh
 ```
-
+5. Save the result:
+```bash
+mkdir results
+cp CameraTrajectory.txt ./results/results_test.txt
+```
 ### Run RGB-D examples on Bonn dataset
 1. Download a sequence from https://www.ipb.uni-bonn.de/data/rgbd-dynamic-dataset/index.html and uncompress it to Datasets/bonn_rgbd/
 2. Open the script "HybridDyn_VSLAM/Examples/RGB-D/rgbd_bonn_test.sh". Change *pathDatasetBonn* variable to point to the directory where the dataset has been uncompressed.
@@ -91,16 +95,22 @@ python3 associate.py {PATH_TO_SEQUENCE}/rgb.txt {PATH_TO_SEQUENCE}/depth.txt {PA
 cd HybridDyn_VSLAM/Examples/RGB-D
 bash ./rgbd_bonn_test.sh
 ```
-
+5. Save the result:
+```bash
+mkdir results
+cp CameraTrajectory.txt ./results/results_test.txt
+```
 # Evaluation
 For TUM datset examples: Open the script "HybridDyn_VSLAM/evaluation/eval_tum_ate.sh". Change *pathDatasetTum* variable to point to the directory of your sequence. Run:
 ```bash
 cd HybridDyn_VSLAM/evaluation
+mkdir plots
 bash ./eval_tum_ate.sh
 ```
 For Bonn dataset examples: Open the script "HybridDyn_VSLAM/evaluation/eval_bonn_ate.sh". Change *pathDatasetBonn* variable to point to the directory of your sequence. Run:
 ```bash
 cd HybridDyn_VSLAM/evaluation
+mkdir plots
 bash ./eval_bonn_ate.sh
 ```
 
