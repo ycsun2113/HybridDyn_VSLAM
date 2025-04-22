@@ -117,6 +117,8 @@ bash ./eval_bonn_ate.sh
 # Acknowledgement
 We would like to thank Prof. Maani Ghaffari, Dr. Minghan Zhu, and the GSIs for their inspiring lectures, helpful instruction, and support during the semester and throughout this project. 
 
+HybridDyn-VSLAM is extended based on [ORB-SLAM3 repository](https://github.com/UZ-SLAMLab/ORB_SLAM3).
+
 # References
 [1] C. Campos, R. Elvira, J. J. G´omez Rodr´ıguez, J. M. M. Mon-
 tiel, and J. D. Tard´os, “ORB-SLAM3: An Accurate Open-Source
