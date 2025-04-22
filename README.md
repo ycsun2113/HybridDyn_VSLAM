@@ -10,7 +10,7 @@
     ,
     <strong>Hao Yin</strong>
   </h3>
-  <h3 align="center"><a href="./doc/report.pdf">Report</a> | <a href="./doc/poster.pdf">Poster</a> | <a href="./doc/slides.pdf">Slides</a> | <a href="./media/presentation.mp4">Video</a></h3>
+  <h3 align="center"><a href="./doc/poster.pdf">Poster</a> | <a href="./doc/slides.pdf">Slides</a> | <a href="./media/presentation.mp4">Video</a></h3>
   <div align="center"></div>
 </p>
 
