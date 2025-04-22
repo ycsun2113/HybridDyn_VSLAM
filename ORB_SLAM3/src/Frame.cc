@@ -16,6 +16,10 @@
 * If not, see <http://www.gnu.org/licenses/>.
 */
 
+/*
+* This file is also part of HybridDyn-VSLAM
+*/
+
 #include "Frame.h"
 
 #include "G2oTypes.h"
@@ -128,34 +132,6 @@ Frame::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeSt
 
     mTimeORB_Ext = std::chrono::duration_cast<std::chrono::duration<double,std::milli> >(time_EndExtORB - time_StartExtORB).count();
 #endif
-    // Apply binary masks to filt out dynamic objects' keypoints
-    // if(mvKeys.empty()){
-    //     return;
-    // }
-    // std::vector<cv::KeyPoint> _mvKeys;
-    // cv::Mat _mDescriptors;
-    // int M = mvKeys.size();
-    
-    // if (M<9000 && M!=0){
-        
-    //     int num=0;
-    //     for (int i =0; i< M; ++i){
-    //         int x_r = floor(mvKeys[i].pt.x);
-    //         int y_r = floor(mvKeys[i].pt.y);
-    //         // cout << "mask data" << mask.at<float>(y_r, x_r) << endl;
-    //         if (mask.at<cv::Vec4b>(y_r, x_r)[1]>0 ||mask.at<cv::Vec4b>(y_r+1, x_r)[1]>0 ||mask.at<cv::Vec4b>(y_r, x_r+1)[1]>0 || mask.at<cv::Vec4b>(y_r+1, x_r+1)[1]>0 ){
-    //                 num+=1;
-    //             }
-    //         else {
-    //             _mvKeys.push_back(mvKeys[i]);
-    //             _mDescriptors.push_back(mDescriptors.row(i));
-    //             }
-    //     }
-    //     std::cout<< "Erase featrues number ="<<  num << std::endl;
-
-    //     mvKeys = _mvKeys;
-    //     mDescriptors =_mDescriptors;
-    // }
 
 
     N = mvKeys.size();
@@ -275,21 +251,6 @@ Frame::Frame(const cv::Mat &mask, const cv::Mat &imGray, const cv::Mat &imDepth,
     }
     
     if (M<9000 && M!=0){
-        
-        // int num=0;
-        // for (int i =0; i< M; ++i){
-        //     int x_r = floor(mvKeys[i].pt.x);
-        //     int y_r = floor(mvKeys[i].pt.y);
-            
-        //     if (mask.at<cv::Vec4b>(y_r, x_r)[1]>0 ||mask.at<cv::Vec4b>(y_r+1, x_r)[1]>0 ||mask.at<cv::Vec4b>(y_r, x_r+1)[1]>0 || mask.at<cv::Vec4b>(y_r+1, x_r+1)[1]>0 ){
-        //             num+=1;
-        //             cout << "mask data" << mask.at<float>(y_r, x_r) << endl;
-        //         }
-        //     else {
-        //         _mvKeys.push_back(mvKeys[i]);
-        //         _mDescriptors.push_back(mDescriptors.row(i));
-        //         }
-        // }
 
         for(size_t i=0; i<M; i++){
             int x = static_cast<int>(std::floor(mvKeys[i].pt.x));
@@ -312,24 +273,6 @@ Frame::Frame(const cv::Mat &mask, const cv::Mat &imGray, const cv::Mat &imDepth,
 
         mvKeys = _mvKeys;
         mDescriptors =_mDescriptors;
-
-        // int num = 0;
-        // for (size_t i(0); i < mvKeys.size(); ++i)
-        // {
-        //     int val = (int)mask.at<uchar>(mvKeys[i].pt.y, mvKeys[i].pt.x);
-        //     if (val == 1)
-        //     {
-        //         _mvKeys.push_back(mvKeys[i]);
-        //         _mDescriptors.push_back(mDescriptors.row(i));
-        //     }
-        //     else{
-        //         num++;
-        //     }
-        // }
-        // std::cout<< "Erase featrues number ="<<  num << std::endl;
-
-        // mvKeys = _mvKeys;
-        // mDescriptors = _mDescriptors;
     }
     
 
@@ -425,34 +368,6 @@ Frame::Frame(const cv::Mat &imGray, const double &timeStamp, ORBextractor* extra
 
     mTimeORB_Ext = std::chrono::duration_cast<std::chrono::duration<double,std::milli> >(time_EndExtORB - time_StartExtORB).count();
 #endif
-    // Apply binary masks to filt out dynamic objects' keypoints
-    // if(mvKeys.empty()){
-    //     return;
-    // }
-    // std::vector<cv::KeyPoint> _mvKeys;
-    // cv::Mat _mDescriptors;
-    // int M = mvKeys.size();
-    
-    // if (M<9000 && M!=0){
-        
-    //     int num=0;
-    //     for (int i =0; i< M; ++i){
-    //         int x_r = floor(mvKeys[i].pt.x);
-    //         int y_r = floor(mvKeys[i].pt.y);
-    //         // cout << "mask data" << mask.at<float>(y_r, x_r) << endl;
-    //         if (mask.at<cv::Vec4b>(y_r, x_r)[1]>0 ||mask.at<cv::Vec4b>(y_r+1, x_r)[1]>0 ||mask.at<cv::Vec4b>(y_r, x_r+1)[1]>0 || mask.at<cv::Vec4b>(y_r+1, x_r+1)[1]>0 ){
-    //                 num+=1;
-    //             }
-    //         else {
-    //             _mvKeys.push_back(mvKeys[i]);
-    //             _mDescriptors.push_back(mDescriptors.row(i));
-    //             }
-    //     }
-    //     std::cout<< "Erase featrues number ="<<  num << std::endl;
-
-    //     mvKeys = _mvKeys;
-    //     mDescriptors =_mDescriptors;
-    // }
 
 
 

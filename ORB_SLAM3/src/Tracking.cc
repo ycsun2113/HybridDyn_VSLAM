@@ -16,6 +16,10 @@
 * If not, see <http://www.gnu.org/licenses/>.
 */
 
+/*
+* This file is also part of HybridDyn-VSLAM
+*/
+
 
 #include "Tracking.h"
 

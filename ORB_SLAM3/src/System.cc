@@ -16,7 +16,9 @@
 * If not, see <http://www.gnu.org/licenses/>.
 */
 
-
+/*
+* This file is also part of HybridDyn-VSLAM
+*/
 
 #include "System.h"
 #include "Converter.h"
