@@ -1,0 +1,7 @@
+opencv-python==4.11.0.86
+matplotlib==3.10.1
+requests==2.32.3
+numpy==2.1.1
+pillow==11.0.0
+tqdm==4.67.1
+ultralytics==8.3.109
