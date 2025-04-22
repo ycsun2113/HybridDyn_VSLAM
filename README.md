@@ -32,11 +32,11 @@ To setup the environment for ORB-SLAM3, please follow [ORB-SLAM3 repository](htt
 ### 1. Build ORB-SLAM3 docker container
 Run
 ```bash
-build_container_cpu.sh
+./build_container_cpu.sh
 ```
 or
 ```bash
-build_container_cuda.sh
+./build_container_cuda.sh
 ```
 depending on your machine.
 
