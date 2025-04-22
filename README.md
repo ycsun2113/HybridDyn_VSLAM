@@ -20,12 +20,12 @@
 4. Our method is modular, requires no prior scene knowledge, and handles both labeled and unlabeled dynamic objects.
 5. Experimental results on the TUM RGB-D and Bonn RGB-D datasets demonstrate significant improvements in localization accuracy and runtime efficiency.
 
-HybridDyn-VSLAM is extended based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3).
-
 <!-- ## Abstract
 In dynamic environments, traditional SLAM systems struggle to maintain accurate localization and mapping due to the presence of moving objects that violate the static-world assumption. To address this challenge, we propose a robust and modular dynamic SLAM framework that enhances ORB-SLAM3 by integrating real-time dynamic region segmentation and optical flow-based motion analysis. Our method leverages FastSAM and YOLO11n-seg to detect potentially dynamic regions, which are further refined using dense optical flow to identify true motion. These dynamic regions are masked to exclude moving region feature points before SLAM processing, enabling improved camera trajectory tracking. Experimental results on the TUM RGB-D and Bonn RGB-D datasets demonstrate significant improvements in localization accuracy and runtime efficiency, achieving real-time performance without requiring prior knowledge of object classes. -->
 
 # Getting Start
+HybridDyn-VSLAM is extended based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3).
+
 ## ORB-SLAM3 Prerequisites and Environment Setup
 To setup the environment for ORB-SLAM3, please follow [ORB-SLAM3 repository](https://github.com/UZ-SLAMLab/ORB_SLAM3). Or, you can use [ORB-SLAM3 docker](https://github.com/jahaniam/orbslam3_docker). Here we show how to setup docker for ORB-SLAM3.<br> 
 
