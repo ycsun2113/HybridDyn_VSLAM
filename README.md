@@ -117,7 +117,7 @@ bash ./eval_bonn_ate.sh
 ```
 # Demo
 <p align="center">
-  <img src="tracking_demo.gif" alt="Tracking Demo" width="500"/>
+  <img src="media/tracking_demo.gif" alt="Tracking Demo" width="500"/>
 </p>
 
 # Acknowledgement
