@@ -116,9 +116,11 @@ mkdir plots
 bash ./eval_bonn_ate.sh
 ```
 # Demo
+
 <p align="center">
-  <img src="media/tracking_demo.gif" alt="Tracking Demo" width="500"/>
+  <img src="media/tracking_demo.gif" alt="Real-time tracking in dynamic environments" width="720"/>
 </p>
+<p align="center"><em>Figure 1: The gif shows that our method successfully remove the features of moving object, leading to robust tracking in dynamic environments. </em></p>
 
 # Acknowledgement
 We would like to thank Prof. Maani Ghaffari, Dr. Minghan Zhu, and the GSIs for their inspiring lectures, helpful instruction, and support during the semester and throughout this project. 
