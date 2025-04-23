@@ -29,7 +29,7 @@ HybridDyn-VSLAM is extended based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/O
 ## ORB-SLAM3 Prerequisites and Environment Setup
 To setup the environment for ORB-SLAM3, please follow [ORB-SLAM3 repository](https://github.com/UZ-SLAMLab/ORB_SLAM3). Or, you can use [ORB-SLAM3 docker](https://github.com/jahaniam/orbslam3_docker). Here we show how to setup docker for ORB-SLAM3.<br> 
 
-### 1. Build ORB-SLAM3 docker container
+<!-- ### 1. Build ORB-SLAM3 docker container
 Run
 ```bash
 ./build_container_cpu.sh
@@ -43,7 +43,7 @@ depending on your machine.
 ### 2. Run ORB-SLAM3 docker image
 ```bash
 docker exec -it orbslam3 bash
-```
+``` -->
 
 ## Masks Generator Environment Setup
 ```bash
