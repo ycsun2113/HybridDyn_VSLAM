@@ -63,13 +63,13 @@ cd HybridDyn_VSLAM/Mask_Generator
 python3 dy_mask_yolo_fastsam.py
 ```
 - Create a mask.txt file to collect the paths of the masks, similar to how it's done in rgb.txt.
-- Go to "HybridDyn_VSLAM/Mask_Generato" and run:
+- Go to "HybridDyn_VSLAM/Mask_Generator" and run:
 ```bash
 python3 associate.py {PATH_TO_SEQUENCE}/rgb.txt {PATH_TO_SEQUENCE}/depth.txt {PATH_TO_SEQUENCE}/mask.txt > tum_example.txt
 ```
 4. Run the example:
 ```bash
-cd HybridDyn_VSLAM/Examples/RGB-D
+cd HybridDyn_VSLAM/ORB_SLAM3/Examples/RGB-D
 bash ./rgbd_tum_test.sh
 ```
 5. Save the result:
@@ -88,13 +88,13 @@ cd HybridDyn_VSLAM/Mask_Generator
 python3 dy_mask_yolo_fastsam.py
 ```
 - Create a mask.txt file to collect the paths of the masks, similar to how it's done in rgb.txt.
-- Go to "HybridDyn_VSLAM/Mask_Generato" and run:
+- Go to "HybridDyn_VSLAM/Mask_Generator" and run:
 ```bash
 python3 associate.py {PATH_TO_SEQUENCE}/rgb.txt {PATH_TO_SEQUENCE}/depth.txt {PATH_TO_SEQUENCE}/mask.txt > tum_example.txt
 ```
 4. Run the example:
 ```bash
-cd HybridDyn_VSLAM/Examples/RGB-D
+cd HybridDyn_VSLAM/ORB_SLAM3/Examples/RGB-D
 bash ./rgbd_bonn_test.sh
 ```
 5. Save the result:
@@ -105,13 +105,13 @@ cp CameraTrajectory.txt ./results/results_test.txt
 # Evaluation
 For TUM datset examples: Open the script "HybridDyn_VSLAM/evaluation/eval_tum_ate.sh". Change *pathDatasetTum* variable to point to the directory of your sequence. Run:
 ```bash
-cd HybridDyn_VSLAM/evaluation
+cd HybridDyn_VSLAM/ORB_SLAM3/evaluation
 mkdir plots
 bash ./eval_tum_ate.sh
 ```
 For Bonn dataset examples: Open the script "HybridDyn_VSLAM/evaluation/eval_bonn_ate.sh". Change *pathDatasetBonn* variable to point to the directory of your sequence. Run:
 ```bash
-cd HybridDyn_VSLAM/evaluation
+cd HybridDyn_VSLAM/ORB_SLAM3/evaluation
 mkdir plots
 bash ./eval_bonn_ate.sh
 ```
