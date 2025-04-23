@@ -115,6 +115,10 @@ cd HybridDyn_VSLAM/ORB_SLAM3/evaluation
 mkdir plots
 bash ./eval_bonn_ate.sh
 ```
+# Demo
+<p align="center">
+  <img src="tracking_demo.gif" alt="Tracking Demo" width="500"/>
+</p>
 
 # Acknowledgement
 We would like to thank Prof. Maani Ghaffari, Dr. Minghan Zhu, and the GSIs for their inspiring lectures, helpful instruction, and support during the semester and throughout this project. 
