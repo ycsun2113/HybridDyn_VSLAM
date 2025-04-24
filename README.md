@@ -34,7 +34,7 @@ In dynamic environments, traditional SLAM systems struggle to maintain accurate 
 HybridDyn-VSLAM is extended based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3).
 
 ## ORB-SLAM3 Prerequisites and Environment Setup
-To setup the environment for ORB-SLAM3, please follow [ORB-SLAM3 repository](https://github.com/UZ-SLAMLab/ORB_SLAM3) to install **C++11 compiler**, **Pangolin**, **OpenCV**, **Eigen3**, and **DBoW2**, and **g2o**. You can also use [ORB-SLAM3 docker](https://github.com/jahaniam/orbslam3_docker).<br> 
+To setup the environment for ORB-SLAM3, please follow [ORB-SLAM3 repository](https://github.com/UZ-SLAMLab/ORB_SLAM3) to install **C++11 compiler**, **Pangolin**, **OpenCV**, **Eigen3**, **DBoW2**, and **g2o**. You can also use [ORB-SLAM3 docker](https://github.com/jahaniam/orbslam3_docker).<br> 
 
 <!-- ### 1. Build ORB-SLAM3 docker container
 Run
