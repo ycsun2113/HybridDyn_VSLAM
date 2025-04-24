@@ -23,6 +23,13 @@
 <!-- ## Abstract
 In dynamic environments, traditional SLAM systems struggle to maintain accurate localization and mapping due to the presence of moving objects that violate the static-world assumption. To address this challenge, we propose a robust and modular dynamic SLAM framework that enhances ORB-SLAM3 by integrating real-time dynamic region segmentation and optical flow-based motion analysis. Our method leverages FastSAM and YOLO11n-seg to detect potentially dynamic regions, which are further refined using dense optical flow to identify true motion. These dynamic regions are masked to exclude moving region feature points before SLAM processing, enabling improved camera trajectory tracking. Experimental results on the TUM RGB-D and Bonn RGB-D datasets demonstrate significant improvements in localization accuracy and runtime efficiency, achieving real-time performance without requiring prior knowledge of object classes. -->
 
+# Demo
+<p align="center">
+  <img src="media/tracking_demo.gif" alt="Real-time tracking in dynamic environments" width="720"/>
+</p>
+<p align="center"><em>Figure 1: The gif shows that our method successfully remove the features of moving object, leading to robust tracking in dynamic environments. </em></p>
+
+
 # Getting Start
 HybridDyn-VSLAM is extended based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3).
 
@@ -115,12 +122,11 @@ cd HybridDyn_VSLAM/ORB_SLAM3/evaluation
 mkdir plots
 bash ./eval_bonn_ate.sh
 ```
-# Demo
-
+<!-- # Demo
 <p align="center">
   <img src="media/tracking_demo.gif" alt="Real-time tracking in dynamic environments" width="720"/>
 </p>
-<p align="center"><em>Figure 1: The gif shows that our method successfully remove the features of moving object, leading to robust tracking in dynamic environments. </em></p>
+<p align="center"><em>Figure 1: The gif shows that our method successfully remove the features of moving object, leading to robust tracking in dynamic environments. </em></p>  -->
 
 # Acknowledgement
 We would like to thank Prof. Maani Ghaffari, Dr. Minghan Zhu, and the GSIs for their inspiring lectures, helpful instruction, and support during the semester and throughout this project. 
