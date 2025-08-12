@@ -10,7 +10,7 @@
     ,
     <strong>Hao Yin</strong>
   </h3>
-  <h3 align="center"><a href="./doc/poster.pdf">Poster</a> | <a href="./doc/slides.pdf">Slides</a> | <a href="./media/presentation.mp4">Video</a></h3>
+  <h3 align="center"><a href="./doc/report.pdf">Report</a> | <a href="./doc/poster.pdf">Poster</a> | <a href="./doc/slides.pdf">Slides</a> | <a href="./media/presentation.mp4">Video</a></h3>
   <div align="center"></div>
 </p>
 
@@ -29,6 +29,16 @@ In dynamic environments, traditional SLAM systems struggle to maintain accurate 
 </p>
 <p align="center"><em>Figure 1: The gif shows that our method successfully remove the features of moving object, leading to robust tracking in dynamic environments. </em></p>
 
+# Results
+<p align="center">
+  <img src="media/result_plots.png" alt="Trajectory comparison across different methods" width="720"/>
+</p>
+<p align="center"><em>Figure 2: Trajectory comparison across different methods. (Black curves: ground-truth camera trajectory. Blue curves: estimated trajectory. Red curves: deviation between the ground-truth and estimated trajectories.) </em></p>
+
+<p align="center">
+  <img src="media/result_table.png" alt="Trajectory comparison across different methods" width="720"/>
+</p>
+<p align="center"><em>Table 1: Results of ATE and improvement rate compared with ORB-SLAM3 and DynaSLAM on TUM and BONN RGB-D datasets. </em></p>
 
 # Getting Start
 HybridDyn-VSLAM is extended based on [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3).
