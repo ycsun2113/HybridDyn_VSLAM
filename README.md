@@ -27,7 +27,7 @@ In dynamic environments, traditional SLAM systems struggle to maintain accurate 
 <p align="center">
   <img src="media/tracking_demo.gif" alt="Real-time tracking in dynamic environments" width="720"/>
 </p>
-<p align="center"><em>Figure 1: The gif shows that our method successfully remove the features of moving object, leading to robust tracking in dynamic environments. </em></p>
+<p align="center"><em>Figure 1: The gif demonstrates that our method successfully remove the feature points of moving object, leading to robust tracking in dynamic environments. </em></p>
 
 # Results
 <p align="center">
